@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXÉNICA - Perfumes de Lujo</title>
+  <meta name="description" content="Fragancias exclusivas y de lujo en LUXÉNICA. Perfumes para hombres y mujeres que definen estilo y elegancia, ahora con descripciones generadas por IA.">
+
+  <!-- Open Graph para compartir -->
+  <meta property="og:title" content="LUXÉNICA - Perfumes de Lujo">
+  <meta property="og:description" content="Descubre fragancias exclusivas que definen tu estilo y elegancia.">
+  <meta property="og:image" content="https://cdn.rmimgs.com/datarm/enhance/2025-08-24/output/rtgxp9xmcxrj20crvmwaan62e0.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luxenica.com">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Montserrat', sans-serif; background-color: #f5f2ed; }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Playfair Display', serif; }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1594035918239-f92a177a4a6c?auto=format&fit=crop&q=80&w=2070');
+    }
+    /* Simple animation for loading spinner */
+    .loader {
+      border-top-color: #b38b6d;
+      -webkit-animation: spinner 1.5s linear infinite;
+      animation: spinner 1.5s linear infinite;
+    }
+    @-webkit-keyframes spinner {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spinner {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-[#f5f2ed] text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-black/80 text-white shadow-lg sticky top-0 z-50 backdrop-blur-sm">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-wider">LUXÉNICA</h1>
+      <nav class="hidden md:flex space-x-8">
+          <a href="#catalogo" class="hover:text-amber-300 transition-colors duration-300">Catálogo</a>
+          <a href="#nosotros" class="hover:text-amber-300 transition-colors duration-300">Sobre Nosotros</a>
+          <a href="#contacto" class="hover:text-amber-300 transition-colors duration-300">Contacto</a>
+      </nav>
+      <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+        <a href="#catalogo" class="block py-2 hover:text-amber-300">Catálogo</a>
+        <a href="#nosotros" class="block py-2 hover:text-amber-300">Sobre Nosotros</a>
+        <a href="#contacto" class="block py-2 hover:text-amber-300">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+      <!-- Hero Section -->
+      <section class="hero-bg bg-cover bg-center h-[70vh] flex items-center justify-center text-white text-center">
+          <div class="bg-black/30 p-8 rounded-lg">
+              <h2 class="text-4xl md:text-6xl font-bold mb-4">El Arte de la Esencia</h2>
+              <p class="text-lg md:text-xl max-w-2xl">Fragancias que no solo se huelen, se sienten. Define tu presencia con un aroma inolvidable.</p>
+              <a href="#catalogo" class="mt-8 inline-block bg-[#b38b6d] text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-[#a17b5e] transition-transform duration-300 hover:scale-105">Descubrir Colección</a>
+          </div>
+      </section>
+
+      <!-- Catalog Section -->
+      <section id="catalogo" class="py-16 md:py-24">
+          <div class="container mx-auto px-6">
+              <h2 class="text-4xl font-bold text-center mb-12">Nuestra Colección Exclusiva</h2>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                  
+                  <!-- Product Card 1: Moschino Toy Boy -->
+                  <div class="bg-white rounded-lg shadow-lg overflow-hidden group flex flex-col">
+                      <img src="https://i.pinimg.com/1200x/64/c3/6d/64c36d5cf77ebdcbcd3af2c1d833e94f.jpg" alt="Perfume Moschino Toy Boy" class="w-full h-72 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x500/f5f2ed/333?text=LUXÉNICA';">
+                      <div class="p-6 flex flex-col flex-grow">
+                          <h3 class="text-2xl font-bold mb-2 perfume-name">Moschino Toy Boy</h3>
+                          <p class="text-gray-600 mb-4 perfume-desc">Una fragancia divertida y audaz que juega con los contrastes especiados y amaderados.</p>
+                          <p class="text-gray-700 italic text-sm mt-2 mb-4 min-h-[60px] ai-description"></p>
+                          <div class="mt-auto">
+                              <button class="w-full bg-transparent border border-gray-800 text-gray-800 py-2 rounded-lg font-bold hover:bg-gray-800 hover:text-white transition-colors duration-300 mb-2 generate-desc-button">✨ Crear descripción poética</button>
+                              <div class="text-center my-4">
+                                <span class="text-3xl font-bold text-[#b38b6d]">$85.000</span>
+                                <span class="block text-sm font-semibold text-green-600 animate-pulse">¡Domicilio Gratis!</span>
+                              </div>
+                              <button class="w-full bg-gray-800 text-white py-2 rounded-lg font-bold hover:bg-[#b38b6d] transition-colors duration-300">Añadir al Carrito</button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Product Card 2: Versace Eros -->
+                  <div class="bg-white rounded-lg shadow-lg overflow-hidden group flex flex-col">
+                      <img src="https://cdn.rmimgs.com/datarm/enhance/2025-08-24/output/rtgxp9xmcxrj20crvmwaan62e0.png" alt="Perfume Versace Eros" class="w-full h-72 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x500/f5f2ed/333?text=LUXÉNICA';">
+                      <div class="p-6 flex flex-col flex-grow">
+                          <h3 class="text-2xl font-bold mb-2 perfume-name">Versace Eros</h3>
+                          <p class="text-gray-600 mb-4 perfume-desc">Una fragancia vibrante y poderosa que encarna la pasión y el deseo.</p>
+                          <p class="text-gray-700 italic text-sm mt-2 mb-4 min-h-[60px] ai-description"></p>
+                          <div class="mt-auto">
+                              <button class="w-full bg-transparent border border-gray-800 text-gray-800 py-2 rounded-lg font-bold hover:bg-gray-800 hover:text-white transition-colors duration-300 mb-2 generate-desc-button">✨ Crear descripción poética</button>
+                              <div class="text-center my-4">
+                                <span class="text-3xl font-bold text-[#b38b6d]">$85.000</span>
+                                <span class="block text-sm font-semibold text-green-600 animate-pulse">¡Domicilio Gratis!</span>
+                              </div>
+                              <button class="w-full bg-gray-800 text-white py-2 rounded-lg font-bold hover:bg-[#b38b6d] transition-colors duration-300">Añadir al Carrito</button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Product Card 3 -->
+                  <div class="bg-white rounded-lg shadow-lg overflow-hidden group flex flex-col">
+                      <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=800" alt="Perfume Dama Floral" class="w-full h-72 object-cover">
+                      <div class="p-6 flex flex-col flex-grow">
+                          <h3 class="text-2xl font-bold mb-2 perfume-name">Fleur d'Or</h3>
+                          <p class="text-gray-600 mb-4 perfume-desc">Un bouquet floral y delicado para la mujer elegante y sofisticada.</p>
+                          <p class="text-gray-700 italic text-sm mt-2 mb-4 min-h-[60px] ai-description"></p>
+                          <div class="mt-auto">
+                              <button class="w-full bg-transparent border border-gray-800 text-gray-800 py-2 rounded-lg font-bold hover:bg-gray-800 hover:text-white transition-colors duration-300 mb-2 generate-desc-button">✨ Crear descripción poética</button>
+                              <div class="text-2xl font-bold text-[#b38b6d] my-4 text-center">$280.000 COP</div>
+                              <button class="w-full bg-gray-800 text-white py-2 rounded-lg font-bold hover:bg-[#b38b6d] transition-colors duration-300">Añadir al Carrito</button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Product Card 4 -->
+                  <div class="bg-white rounded-lg shadow-lg overflow-hidden group flex flex-col">
+                      <img src="https://images.unsplash.com/photo-1523293182186-2d935CF26f83?auto=format&fit=crop&q=80&w=800" alt="Perfume Unisex Cítrico" class="w-full h-72 object-cover">
+                      <div class="p-6 flex flex-col flex-grow">
+                          <h3 class="text-2xl font-bold mb-2 perfume-name">Aqua de Veritas</h3>
+                          <p class="text-gray-600 mb-4 perfume-desc">Frescura cítrica y unisex, ideal para el día a día con un toque de clase.</p>
+                          <p class="text-gray-700 italic text-sm mt-2 mb-4 min-h-[60px] ai-description"></p>
+                          <div class="mt-auto">
+                              <button class="w-full bg-transparent border border-gray-800 text-gray-800 py-2 rounded-lg font-bold hover:bg-gray-800 hover:text-white transition-colors duration-300 mb-2 generate-desc-button">✨ Crear descripción poética</button>
+                              <div class="text-2xl font-bold text-[#b38b6d] my-4 text-center">$210.000 COP</div>
+                              <button class="w-full bg-gray-800 text-white py-2 rounded-lg font-bold hover:bg-[#b38b6d] transition-colors duration-300">Añadir al Carrito</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <!-- About Us Section -->
+      <section id="nosotros" class="bg-white py-16 md:py-24">
+          <div class="container mx-auto px-6 text-center">
+              <h2 class="text-4xl font-bold mb-6">La Esencia de LUXÉNICA</h2>
+              <p class="max-w-3xl mx-auto text-lg text-gray-700">
+                  En LUXÉNICA, curamos una colección de fragancias que son más que simples aromas; son una extensión de tu identidad. Nacimos de la pasión por la perfumería de alta gama, con la misión de ofrecer experiencias olfativas inolvidables. Cada frasco es una promesa de calidad, elegancia y distinción.
+              </p>
+          </div>
+      </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer id="contacto" class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-4">LUXÉNICA</h2>
+          <p class="mb-8">El lujo es una declaración. Haz la tuya.</p>
+          <div class="mb-8">
+              <p class="font-semibold text-lg">Contáctanos</p>
+              <a href="mailto:contacto@luxenica.com" class="block hover:text-amber-300">contacto@luxenica.com</a>
+              <a href="https://wa.me/57301974692" target="_blank" class="block hover:text-amber-300">WhatsApp: +57 324 5515816</a>
+          </div>
+          <p class="text-gray-500 text-sm">&copy; 2025 LUXÉNICA - Todos los derechos reservados.</p>
+      </div>
+  </footer>
+
+  <!-- Modal for Loading/Error State -->
+  <div id="ai-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg p-8 shadow-2xl text-center max-w-sm mx-auto">
+        <div id="modal-loading">
+            <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mx-auto mb-4"></div>
+            <h3 class="text-lg font-semibold">Creando magia...</h3>
+            <p class="text-gray-600">Nuestra IA está generando una descripción única para ti.</p>
+        </div>
+        <div id="modal-error" class="hidden">
+            <h3 class="text-lg font-semibold text-red-600">¡Ups! Algo salió mal</h3>
+            <p class="text-gray-600">No pudimos generar la descripción. Por favor, inténtalo de nuevo más tarde.</p>
+            <button id="close-modal-button" class="mt-4 bg-gray-800 text-white py-2 px-4 rounded-lg">Cerrar</button>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    // --- Mobile Menu Toggle ---
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // --- Gemini API Integration ---
+    const generateButtons = document.querySelectorAll('.generate-desc-button');
+    const modal = document.getElementById('ai-modal');
+    const modalLoading = document.getElementById('modal-loading');
+    const modalError = document.getElementById('modal-error');
+    const closeModalButton = document.getElementById('close-modal-button');
+
+    // Function to show/hide modal
+    const showModal = (state = 'loading') => {
+        if (state === 'loading') {
+            modalLoading.classList.remove('hidden');
+            modalError.classList.add('hidden');
+        } else {
+            modalLoading.classList.add('hidden');
+            modalError.classList.remove('hidden');
+        }
+        modal.classList.remove('hidden');
+    };
+
+    const hideModal = () => {
+        modal.classList.add('hidden');
+    };
+
+    closeModalButton.addEventListener('click', hideModal);
+
+    // Function to call Gemini API with exponential backoff
+    const callGeminiAPI = async (prompt, maxRetries = 3) => {
+        const apiKey = ""; // API key is handled by the environment
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+        
+        let attempt = 0;
+        while (attempt < maxRetries) {
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ role: "user", parts: [{ text: prompt }] }]
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    return result.candidates[0].content.parts[0].text;
+                } else {
+                    throw new Error("Respuesta inesperada de la API.");
+                }
+
+            } catch (error) {
+                attempt++;
+                if (attempt >= maxRetries) {
+                    console.error("Error fetching Gemini response after multiple retries:", error);
+                    return null;
+                }
+                const delay = Math.pow(2, attempt) * 1000; // 2s, 4s, 8s
+                await new Promise(res => setTimeout(res, delay));
+            }
+        }
+        return null;
+    };
+
+    // Add event listener to each button
+    generateButtons.forEach(button => {
+        button.addEventListener('click', async (event) => {
+            const card = event.target.closest('.group');
+            const perfumeName = card.querySelector('.perfume-name').textContent;
+            const perfumeDesc = card.querySelector('.perfume-desc').textContent;
+            const aiDescriptionEl = card.querySelector('.ai-description');
+
+            showModal('loading');
+            button.disabled = true;
+            button.textContent = 'Generando...';
+
+            const prompt = `Crea una descripción poética, evocadora y vendedora de no más de 30 palabras para un perfume de lujo llamado "${perfumeName}". Su descripción base es: "${perfumeDesc}". Enfócate en las sensaciones, el carácter y la ocasión ideal para usarlo. No uses asteriscos ni markdown.`;
+            
+            const aiText = await callGeminiAPI(prompt);
+
+            if (aiText) {
+                aiDescriptionEl.textContent = aiText;
+                hideModal();
+            } else {
+                showModal('error');
+            }
+            
+            button.disabled = false;
+            button.textContent = '✨ Crear descripción poética';
+        });
+    });
+  </script>
+
+</body>
+</html>
